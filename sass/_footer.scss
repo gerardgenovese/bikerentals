@@ -1,0 +1,12 @@
+.footer{
+height: 5rem;
+width: 100%;
+background:#232f3f;
+display:flex;
+justify-content: center;
+align-items: center;
+
+  &-copy{
+    color:white;
+  }
+}

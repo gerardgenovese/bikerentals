@@ -1,0 +1,104 @@
+.navigation {
+  
+  &-cart{
+    &-checkbox{
+      position:absolute;
+      top: 0;
+      right: 1rem;
+    }
+
+    &-cartIcon{
+      position: absolute;
+      top: 1.5rem;
+      right: 1rem;
+      transform: translateY(-50%);
+      z-index: 1;
+      cursor:pointer;
+      transition: .3s;
+
+      &:hover{
+        transition: .3s;
+      }
+    }
+
+    &-checkbox{
+      display:none;
+    }
+
+    &-number{
+      position:absolute;
+      top: .5rem;
+      right: 1.25rem;
+      transform: translateY(-50%);
+      font-size: .8rem;
+      font-weight:bold;   
+    }
+
+    &-menu{
+      display:none;
+      position:absolute;
+      top: 3rem;
+      right: 0;
+      background:rgb(185, 180, 180);
+      height: 0;
+
+      &--row{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin: 1rem;
+
+        padding: .5rem;
+        border-bottom: 1px solid gray;
+      }
+
+      &--img{
+        width: 3rem;
+      }
+
+      &--title{
+        padding: 0 1rem;
+        font-size: .68rem;
+      }
+      &--price{
+        padding: 0 1rem;
+        font-size: .6rem;
+        font-style: italic;
+      }
+  
+
+      &--input{
+        width: 2.5rem;
+        font-size: .6rem;
+      }
+      &--total{
+        margin-top: auto;
+      }
+      &--trash{
+        margin-left: .5rem;
+        cursor:pointer;
+        color:rgb(151, 11, 11);
+
+        &:hover{
+          color:rgb(252, 15, 15);
+        }
+      }
+    }
+
+    &-checkbox:checked ~ &-menu{
+      position:absolute;
+      top: 3rem;
+      right: 0;
+      background:#fff;
+      border: 1px solid black;
+      border-right: transparent;
+      height: 30rem;
+      width: 22rem;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow:auto;
+      text-align:center;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bike Rentals</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  
+</head>
+<body>
+
+  <div id="project-container">
+    <nav class="navigation">
+      <div class="navigation-out">
+        <input type="checkbox" class="navigation-checkbox" id="navigation-toggle">
+        <label for="navigation-toggle" class="navigation-button">
+          <i class="fas fa-bars navigation-hamburger"></i>
+        </label>
+        <div class="navigation-menu">
+          <i class="fas fa-times navigation-menu-close"></i>
+          <div class="navigation-menu-header">Bike Rentals</div>
+          <ul class="navigation-menu-links">
+            <a href="#" class="navigation-menu-link"> 
+              <li class="navigation-menu-li">Home</li> 
+              <i class="fas fa-chevron-right navigation-menu-arrow"></i>
+            </a>
+            <a href="#" class="navigation-menu-link"> 
+              <li class="navigation-menu-li">Bikes</li> 
+              <i class="fas fa-chevron-right navigation-menu-arrow"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation-logo">Bike Rentals</div>
+      <div>
+        <input type="checkbox" class="navigation-cart-checkbox" id="navigation-cart-toggle">
+        <label for="navigation-cart-toggle" class="navigation-cart-button">
+          <div class="navigation-cart-number">0</div>
+          <i class="fas fa-cart-arrow-down navigation-cart-cartIcon"></i>
+        </label>
+        <div class="navigation-cart-menu">
+          <div id ="cartTotal" class="navigation-cart-menu--total">Your Cart is Empty</div>
+        </div>
+      </div>
+    </nav>
+   
+    <main id="store" class="store"></main>
+
+    <footer class="footer">
+      <div class="footer-copy">
+        &copy; Bike Rentals
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

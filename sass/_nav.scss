@@ -1,0 +1,99 @@
+.navigation{
+  position:fixed;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid rgba(185, 183, 183, 0.651);
+
+  &-out{
+    background:rgba(0, 0, 0, 0.651);
+  }
+
+  &-logo{
+    position: absolute;
+    top: 1.5rem;
+    left: 4rem;
+    transform:translateY(-50%);
+    text-transform:uppercase;
+  }
+
+  &-checkbox{
+    position:absolute;
+    display:none;
+  }
+
+  &-hamburger{
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    transform: translateY(-50%);
+    cursor:pointer;
+  }
+
+  &-menu{
+    display:none;
+    height: 100vh;
+    width: 0;
+
+    &-header{
+      background:#232f3f;;
+      height: 2rem;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      text-transform: uppercase;
+    }
+
+    &-links{
+      list-style-type: none;
+      text-transform:uppercase;
+    }
+ 
+    &-link{
+      display:flex;
+      justify-content: space-between;
+      padding: .2rem 1rem;
+
+      text-decoration: none;
+      color:rgb(61, 60, 60);
+      font-size: .6rem;
+      font-weight:bold;
+      letter-spacing: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+
+      &:hover{
+        background:rgb(189, 189, 192);
+      }
+    }
+  
+    &-arrow{
+      color: rgb(61, 60, 60);
+    }
+
+    &-close{
+      position:absolute;
+      right: -1.1rem;
+      font-size: 1.5rem;
+      color:white;
+      cursor:pointer;
+    }
+  }
+
+  &-checkbox:checked ~ &-menu{
+    background:#fff;
+    height: 100vh;
+    width: 35%;
+    position:relative;
+    z-index: 1;
+    display:block;
+
+    @media only screen and (max-width: 800px){
+      width: 50%;
+    }
+  }
+
+
+}
